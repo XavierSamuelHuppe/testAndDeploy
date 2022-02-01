@@ -1,10 +1,9 @@
+orbs:
+  node: circleci/node@4.0.0
+
 version: 2.1
 
-orbs:
-  aws-elastic-beanstalk: circleci/aws-elastic-beanstalk@2.0.1
-  node: circleci/node@4.1.0
-
 workflows:
-  elastic-beanstalk-workflow:
+  app-tests:
     jobs:
       - node/test
